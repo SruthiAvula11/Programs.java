@@ -1,0 +1,35 @@
+Program to insert an element at right position in a sorted array.The element to be inserted is given has the last element in the array
+Source code:
+import java.util.Scanner;
+public class Sortexample1
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int a[]=new int[n];
+        for(int i=0;i<n;i++)
+        {
+            a[i]=sc.nextInt();
+        }
+        int temp=a[n-1];
+        int j=n-2;
+        while(j>=0 && a[j]>temp)
+        {
+            if(a[j]>temp)
+            {
+                a[j+1]=a[j];
+            }
+            j--;
+        }
+        a[j+1]=temp;
+      for(int i=0;i<n;i++)
+        {
+            System.out.print(a[i]+" ");
+        }
+    }
+}
+Output:
+5
+10 20 30 40 5
+5 10 20 30 40
