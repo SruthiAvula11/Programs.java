@@ -1,4 +1,4 @@
-Program to print sorted array from two sorted arrays by using merge sort
+Program to print sorted array from  sorted arrays by using merge sort
 Source code:
 import java.util.Scanner;
 public class Sortingmerge
